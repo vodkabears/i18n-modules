@@ -1,0 +1,51 @@
+{
+  "name": "i18n-modules",
+  "version": "1.0.0",
+  "description": "Isolated I18N modules",
+  "license": "MIT",
+  "homepage": "https://github.com/VodkaBears/i18n-modules",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/VodkaBears/i18n-modules.git"
+  },
+  "keywords": [
+    "i18n",
+    "l10n",
+    "internationalization",
+    "localization",
+    "translations",
+    "modules"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "eslint . --ignore-path .gitignore",
+    "build:client": "webpack --config example/webpack.client.config.js",
+    "build:server": "webpack --config example/webpack.server.config.js",
+    "build": "npm run build:client && npm run build:server",
+    "clean": "rm -rf example/build",
+    "start": "npm run clean && npm run build && node example/app",
+    "precommit": "npm test"
+  },
+  "dependencies": {
+    "node-polyglot": "^2.2.2",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^4.3.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-standard": "^3.0.1",
+    "express": "^4.15.2",
+    "husky": "^0.13.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "^2.4.1"
+  }
+}

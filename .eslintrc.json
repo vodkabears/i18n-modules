@@ -1,0 +1,12 @@
+{
+  "extends": ["standard", "standard-react"],
+
+  "globals": {
+    "LANGS": true,
+    "BUNDLE_LANG": true
+  },
+
+  "rules": {
+    "react/react-in-jsx-scope": 0
+  }
+}
