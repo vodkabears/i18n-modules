@@ -2,5 +2,6 @@
 npm-debug.log
 
 .idea
+lib
 node_modules
 example/build

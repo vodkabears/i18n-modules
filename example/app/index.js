@@ -14,4 +14,4 @@ app.get('/', (req, res) => {
   res.status(200).send(render(req))
 })
 
-app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`))
+app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}/?lang=ru`))

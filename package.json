@@ -18,12 +18,16 @@
   ],
   "main": "lib/index.js",
   "scripts": {
-    "test": "eslint . --ignore-path .gitignore",
-    "build:client": "webpack --config example/webpack.client.config.js",
-    "build:server": "webpack --config example/webpack.server.config.js",
-    "build": "npm run build:client && npm run build:server",
-    "clean": "rm -rf example/build",
-    "start": "npm run clean && npm run build && node example/app",
+    "clean": "rm -rf example/build && rm -rf lib",
+    "build": "babel src --out-dir lib",
+    "example:build-client": "webpack --config example/webpack.client.config.js",
+    "example:build-server": "webpack --config example/webpack.server.config.js",
+    "example:build": "npm run example:build-client && npm run example:build-server",
+    "example": "npm run clean && npm run build && npm run example:build && node example/app",
+    "lint": "eslint src example --ignore-path .gitignore",
+    "test": "npm run lint",
+    "start": "npm run example",
+    "prepublish": "npm run clean && npm run build",
     "precommit": "npm test"
   },
   "dependencies": {
@@ -31,9 +35,10 @@
     "uuid": "^3.0.1"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-react": "^4.3.0",
