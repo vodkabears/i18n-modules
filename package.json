@@ -8,6 +8,14 @@
     "type": "git",
     "url": "git://github.com/VodkaBears/i18n-modules.git"
   },
+  "bugs": {
+    "url": "https://github.com/VodkaBears/i18n-modules/issues"
+  },
+  "author": {
+    "name": "Ilya Makarov",
+    "email": "ilya.caulfield@gmail.com",
+    "url": "https://github.com/VodkaBears"
+  },
   "keywords": [
     "i18n",
     "l10n",
