@@ -1,6 +1,6 @@
 {
   "name": "i18n-modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Isolated I18N modules",
   "license": "MIT",
   "homepage": "https://github.com/VodkaBears/i18n-modules",
@@ -25,6 +25,12 @@
     "modules"
   ],
   "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src",
+    "*.md",
+    "LICENSE"
+  ],
   "scripts": {
     "clean": "rm -rf example/build && rm -rf lib",
     "build": "babel src --out-dir lib",

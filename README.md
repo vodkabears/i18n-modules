@@ -2,6 +2,10 @@
 
 Isolated I18N modules for your components. Like CSS modules but for i18n ;)
 
+```
+npm install --save i18n-modules
+```
+
 ## Benefits
 
 * No more large files with translations for the whole website.
