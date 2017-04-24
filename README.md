@@ -4,7 +4,7 @@ Isolated I18N modules for your components. Like CSS modules but for i18n ;)
 
 ## Benefits
 
-* No more large files with translations for the hole website.
+* No more large files with translations for the whole website.
 * No more global scope.
 * No more broken texts.
 
@@ -29,7 +29,7 @@ First of all you should set available locales with the global variable `LANGS` a
 
 #### Step 2:
 
-Set ignore pattern for unnecessary languages in the current bundle:
+Set an ignore pattern for unnecessary languages in the current bundle:
 
 ```js
     plugins: [
